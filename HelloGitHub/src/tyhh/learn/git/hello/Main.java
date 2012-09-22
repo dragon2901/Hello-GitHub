@@ -1,5 +1,7 @@
 package tyhh.learn.git.hello;
 
+import tyhh.learn.git.hello.entity.HelloEntity;
+
 /**
  * Entry point class
  * 
@@ -13,6 +15,7 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-	System.out.println("Hello GitHub!");
+	HelloEntity hello = new HelloEntity("tyhh", "How do you do!");
+	System.out.println(hello.getMessage());
     }
 }
